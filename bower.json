@@ -1,0 +1,30 @@
+{
+  "name": "google-drive-filepicker",
+  "description": "Jquery Filepicker from Google Drive",
+  "authors": [
+    "Stéphane Monnot <monnot.stephane@gmail.com>"
+  ],
+  "main": [
+    "./dist/js/jquery.gdrive-filepicker.js",
+    "./dist/js/jquery.gdrive-filepicker.min.js"
+  ],
+  "version": "0.1.0",
+  "keywords": [
+    "Google drive",
+    "Filepicker"
+  ],
+  "license": "CC BY-NC-SA 3.0",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "ignore": [
+    "bower_components",
+    "demo/",
+    "dist/js/lib/",
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/shinbuntu/google-drive-filepicker"
+}
