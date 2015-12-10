@@ -108,7 +108,7 @@
      */
     _fileGetCallback: function (file) {
       if (this.options.onPicked) {
-        this.options.onPicked(file);
+        this.options.onPicked.call(this.element, file);
       }
     },
 

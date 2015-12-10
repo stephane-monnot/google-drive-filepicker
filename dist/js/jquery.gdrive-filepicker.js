@@ -7,6 +7,7 @@
 ;(function ($, window, document, undefined) {
   var pluginName = "gdriveFilePicker",
       defaults   = {
+        fixed: false,
         apiKey: null,
         clientId: null,
         scopes: ['https://www.googleapis.com/auth/drive.readonly'],
@@ -107,7 +108,7 @@
      */
     _fileGetCallback: function (file) {
       if (this.options.onPicked) {
-        this.options.onPicked(file);
+        this.options.onPicked.call(this.element, file);
       }
     },
 
