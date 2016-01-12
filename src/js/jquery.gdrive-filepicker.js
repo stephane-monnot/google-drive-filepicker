@@ -82,6 +82,10 @@
         this.picker.enableFeature(eval(this.options.features[i]));
       }
 
+      if (typeof this.options.beforeShow == 'function') {
+        this.options.beforeShow.call(this, this.picker);
+      }
+
       this.picker.build().setVisible(true);
     },
 
