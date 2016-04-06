@@ -137,6 +137,9 @@
      * @private
      */
     _doAuth: function (immediate, callback) {
+      if (typeof callback === 'undefined') {
+        callback = function() {};
+      }
       gapi.auth.authorize({
         client_id: this.options.clientId + '.apps.googleusercontent.com',
         scope: this.options.scopes,
